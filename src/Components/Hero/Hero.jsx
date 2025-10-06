@@ -29,7 +29,7 @@ export default function Hero() {
 
         <div className="hero-art">
           <img
-            src="https://images.pexels.com/photos/9799991/pexels-photo-9799991.jpeg"
+            src="https://images.unsplash.com/photo-1646752999955-e7c82332d76e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="EV charger installed in modern garage"
             className="hero-panel"
             loading="eager"

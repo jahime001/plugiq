@@ -6,11 +6,11 @@ export default function Work() {
     { src: "/images/work1.jpg", alt: "" },
     { src: "/images/work2.png", alt: "" },
     { src: "/images/work3.png", alt: "" },
-    { src: "/images/work4.png", alt: "" },
+    // { src: "/images/work4.png", alt: "" },
     { src: "/images/work5.png", alt: "" },
     { src: "/images/work6.png", alt: "" },
     { src: "/images/work7.png", alt: "" },
-    { src: "/images/work8.png", alt: "" },
+    // { src: "/images/work8.png", alt: "" },
   ];
 
   const [active, setActive] = useState(null);
