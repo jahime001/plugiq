@@ -1,0 +1,71 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand: #237f42;
+  --brand-dark: #1b5e36;
+  --brand-light: #4ec77e;
+  --accent: #3b82f6;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --bg: #f5f7fa;
+  --error: #dc2626;
+  --success: #16a34a;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.08s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:focus-visible {
+  outline: 3px solid rgba(35, 127, 66, 0.35);
+  outline-offset: 2px;
+}
+.btn--primary {
+  background: var(--brand);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(35, 127, 66, 0.25);
+}
+.btn--primary:hover {
+  background: var(--brand-dark);
+  transform: translateY(-1px);
+}
+.btn--outline {
+  background: transparent;
+  color: var(--brand);
+}
+.btn--outline:hover {
+  background: color-mix(in srgb, var(--brand) 10%, white);
+}
+
+:root {
+  --toastify-color-info: var(--brand);
+  --toastify-toast-width: 360px;
+}
+.Toastify__toast-container {
+  z-index: 9999;
+}
+.Toastify__toast {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+.Toastify__progress-bar-theme--colored {
+  opacity: 0.85;
+}

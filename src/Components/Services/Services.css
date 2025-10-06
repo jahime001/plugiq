@@ -1,0 +1,124 @@
+.services {
+  position: relative;
+  background: radial-gradient(
+      900px 380px at 90% -20%,
+      rgba(35, 127, 66, 0.06),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
+  border-top: 1px solid #eef2f6;
+}
+
+.services-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 72px 20px;
+}
+
+.services-copy {
+  max-width: 720px;
+  margin-bottom: 18px;
+}
+
+.services-eyebrow {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-dark);
+  background: rgba(35, 127, 66, 0.1);
+  border: 1px solid rgba(35, 127, 66, 0.25);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.services-title {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 5vw, 34px);
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.services-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 60ch;
+}
+
+.services-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.04);
+  transition: transform 0.12s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(2, 6, 23, 0.08);
+  border-color: rgba(35, 127, 66, 0.35);
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: radial-gradient(
+      14px 14px at 30% 30%,
+      rgba(255, 255, 255, 0.7),
+      transparent 60%
+    ),
+    linear-gradient(135deg, var(--brand), #3da461);
+  box-shadow: inset 0 0 0 1px rgba(2, 6, 23, 0.06),
+    0 8px 18px rgba(35, 127, 66, 0.18);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-title {
+  margin: 4px 0 2px;
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.service-desc {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.service-cta {
+  align-self: flex-start;
+}
+
+.services-bottom-cta {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
